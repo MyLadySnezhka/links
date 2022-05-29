@@ -44,6 +44,14 @@
   text-align: center;
 }
 
+.header .header-content .header-text-effect {
+  display: inline-block;
+  -webkit-animation: rubberBand;
+          animation: rubberBand;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
 .header .button {
   width: 160px;
   height: 80px;
@@ -82,42 +90,43 @@
   -webkit-animation: move 5s infinite;
           animation: move 5s infinite;
   position: relative;
+  border: 1px solid #000;
 }
 
 @-webkit-keyframes move {
   0% {
-    left: 0px;
-    background: #FED233;
+    left: 50px;
+    background: bisque;
   }
-  100% {
-    left: 1200px;
+  50% {
+    left: 90%;
     background: aquamarine;
   }
-  0% {
-    left: 0px;
-    background: #FED233;
+  100% {
+    left: 50px;
+    background: bisque;
   }
 }
 
 @keyframes move {
   0% {
-    left: 0px;
-    background: #FED233;
+    left: 50px;
+    background: bisque;
   }
-  100% {
-    left: 1200px;
+  50% {
+    left: 90%;
     background: aquamarine;
   }
-  0% {
-    left: 0px;
-    background: #FED233;
+  100% {
+    left: 50px;
+    background: bisque;
   }
 }
 
 .content-wrapper {
-  max-width: 1200px;
+  min-height: 870px;
   width: 80%;
-  margin: 20px auto;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,6 +142,14 @@
   font-size: 20px;
 }
 
+.content-wrapper li {
+  font-size: 24px;
+}
+
+.content-wrapper li a {
+  font-size: 20px;
+}
+
 .content-wrapper a {
   text-decoration: none;
   -webkit-transition: all 0.5s linear;
@@ -141,25 +158,30 @@
 
 .content-wrapper a:hover {
   font-size: 24px;
-  text-decoration: underline;
+  color: #000;
+}
+
+.content-block1, .content-block2 {
+  width: 45%;
+  min-height: 790px;
+  border: 1px double #000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1230px) {
+  .content-block1, .content-block2 {
+    width: 100%;
+    margin: 10px auto;
+  }
 }
 
 .content-block1 {
-  width: 45%;
-  min-height: 700px;
-  border: 1px double blue;
-  border-radius: 10px;
-  background-color: #FED233;
-  padding: 20px;
+  background-color: bisque;
 }
 
 .content-block2 {
-  width: 45%;
-  min-height: 700px;
-  border: 1px double blue;
-  border-radius: 10px;
   background-color: aquamarine;
-  padding: 20px;
 }
 
 .footer {
@@ -170,5 +192,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
+  background-color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
