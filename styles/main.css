@@ -60,7 +60,7 @@
 }
 
 .header .button:hover {
-  background-color: yellowgreen;
+  background-color: bisque;
 }
 
 .animation {
@@ -149,7 +149,7 @@
   min-height: 700px;
   border: 1px double blue;
   border-radius: 10px;
-  background-color: bisque;
+  background-color: #FED233;
   padding: 20px;
 }
 
