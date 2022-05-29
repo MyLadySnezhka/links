@@ -1,0 +1,55 @@
+.body-container {
+  max-width: 1920px;
+  width: 100%;
+  min-height: 1200px;
+  row-gap: 30px;
+}
+
+.animation {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px double blue;
+  border-radius: 10px;
+  min-height: 400px;
+}
+
+.content-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-block1 {
+  width: 45%;
+  border: 1px double blue;
+  border-radius: 10px;
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.content-block2 {
+  width: 45%;
+  border: 1px double blue;
+  border-radius: 10px;
+  background-color: bisque;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: large;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=main.css.map */
