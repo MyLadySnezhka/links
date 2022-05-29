@@ -11,6 +11,7 @@
     margin: 0 auto;
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     color: #fff;
     box-sizing: border-box;
@@ -23,6 +24,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     .button {
@@ -30,7 +32,7 @@
         height: 80px;
         box-sizing: border-box;
         padding: 15px;
-        background-color: rgb(216, 203, 18);
+        background-color: #FED233;
         color: #000;
         border: 1px solid black;
         border-radius: 10px;
@@ -43,19 +45,29 @@
         }
     }
 
-    @media screen and (max-width: 1200px) {
-        flex-wrap: wrap;
-    }
 }
 
 .animation {
     width: 80%;
     margin: 0 auto;
-    border: 1px double blue;
-    border-radius: 10px;
-    min-height: 200px;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
 }
 
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+    animation: move 5s infinite;
+    position: relative;
+}
+
+@keyframes move {
+    0% {left: 0px; background: #FED233}
+    100% {left:1200px; background: aquamarine;}
+    0% {left: 0px; background: #FED233}
+}
 
 
 .content-wrapper {
@@ -87,7 +99,7 @@
     min-height: 700px;
     border: 1px double blue;
     border-radius: 10px;
-    background-color: aquamarine;
+    background-color: bisque;
     padding: 20px;
 }
 
@@ -96,7 +108,7 @@
     min-height: 700px;
     border: 1px double blue;
     border-radius: 10px;
-    background-color: bisque;
+    background-color: aquamarine;
     padding: 20px;
 }
 
