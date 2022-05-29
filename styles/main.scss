@@ -13,19 +13,34 @@
     min-height: 400px;
 }
 
+
+
 .content-wrapper {
     max-width: 1200px;
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap; 
-    
+    gap: 10px;
+    row-gap: 20px;
     justify-content: space-around;
     align-items: center;
+
+    a {
+        text-decoration: none;
+        transition: all 0.5s linear;
+    
+        &:hover {
+            font-size: large;
+            text-decoration: underline;
+            
+        }
+    }
 }
 
 .content-block1 {
     width: 45%;
+    min-height: 600px;
     border: 1px double blue;
     border-radius: 10px;
     background-color: aquamarine;
@@ -34,18 +49,20 @@
 
 .content-block2 {
     width: 45%;
+    min-height: 600px;
     border: 1px double blue;
     border-radius: 10px;
     background-color: bisque;
     padding: 20px;
 }
 
-a {
-    text-decoration: none;
 
-    &:hover {
-        font-size: large;
-        text-decoration: underline;
-        transition: all 0.5s linear;
-    }
+
+.footer {
+    width: 80%;
+    min-height: 100px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    
 }
