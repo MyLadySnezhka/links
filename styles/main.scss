@@ -6,7 +6,7 @@
 }
 
 .animation {
-    width: 1200px;
+    width: 80%;
     margin: 0 auto;
     border: 1px double blue;
     border-radius: 10px;
@@ -14,7 +14,8 @@
 }
 
 .content-wrapper {
-    width: 1200px;
+    max-width: 1200px;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap; 
@@ -45,5 +46,6 @@ a {
     &:hover {
         font-size: large;
         text-decoration: underline;
+        transition: all 0.5s linear;
     }
 }
