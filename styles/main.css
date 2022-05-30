@@ -50,10 +50,10 @@
 
 .header .header-content .header-text-effect {
   display: inline-block;
-  -webkit-animation: rubberBand;
-          animation: rubberBand;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation: heartBeat;
+          animation: heartBeat;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .header .button {
@@ -69,10 +69,11 @@
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
+  margin: 30px 0;
 }
 
 .header .button:hover {
-  background-color: bisque;
+  background-color: #7ca6d6;
 }
 
 .animation {
@@ -84,46 +85,85 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 80px;
+  min-height: 60px;
+  position: relative;
 }
 
-.animation .circle {
+.animation .block1 {
   width: 50px;
   height: 50px;
-  border-radius: 999px;
-  -webkit-animation: move 5s infinite;
-          animation: move 5s infinite;
-  position: relative;
+  -webkit-animation: move1 5s infinite;
+          animation: move1 5s infinite;
+  position: absolute;
   border: 1px solid #000;
 }
 
-@-webkit-keyframes move {
+@-webkit-keyframes move1 {
   0% {
     left: 30px;
-    background: bisque;
+    background: blue;
   }
   50% {
-    left: 90%;
-    background: aquamarine;
+    left: 49%;
+    background: blue;
   }
   100% {
     left: 30px;
-    background: bisque;
+    background: yellow;
   }
 }
 
-@keyframes move {
+@keyframes move1 {
   0% {
     left: 30px;
-    background: bisque;
+    background: blue;
   }
   50% {
-    left: 90%;
-    background: aquamarine;
+    left: 49%;
+    background: blue;
   }
   100% {
     left: 30px;
-    background: bisque;
+    background: yellow;
+  }
+}
+
+.animation .block2 {
+  width: 50px;
+  height: 50px;
+  -webkit-animation: move2 5s infinite;
+          animation: move2 5s infinite;
+  position: absolute;
+  border: 1px solid #000;
+}
+
+@-webkit-keyframes move2 {
+  0% {
+    right: 30px;
+    background: yellow;
+  }
+  50% {
+    right: 49%;
+    background: yellow;
+  }
+  100% {
+    right: 30px;
+    background: blue;
+  }
+}
+
+@keyframes move2 {
+  0% {
+    right: 30px;
+    background: yellow;
+  }
+  50% {
+    right: 49%;
+    background: yellow;
+  }
+  100% {
+    right: 30px;
+    background: blue;
   }
 }
 
@@ -156,13 +196,14 @@
 
 .content-wrapper a {
   text-decoration: none;
+  color: #000;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
 
 .content-wrapper a:hover {
   font-size: 24px;
-  color: #000;
+  font-weight: bold;
 }
 
 .content-wrapper .mytext {
@@ -185,11 +226,11 @@
 }
 
 .content-block1 {
-  background-color: bisque;
+  background-color: #7ca6d6;
 }
 
 .content-block2 {
-  background-color: aquamarine;
+  background-color: #dee97e;
 }
 
 .footer {
