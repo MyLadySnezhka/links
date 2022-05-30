@@ -6,6 +6,7 @@
     row-gap: 30px;
     margin: 0 auto;
     box-sizing: border-box;
+    padding: 10px;
 }
 
 .header {
@@ -72,9 +73,9 @@
         border: 1px solid #000;
     
         @keyframes move {
-            0% {left: 50px; background: bisque;}
+            0% {left: 30px; background: bisque;}
             50% {left: 90%; background: aquamarine;}
-            100% {left: 50px; background: bisque;}
+            100% {left: 30px; background: bisque;}
         }
     
     }
@@ -154,7 +155,8 @@
     .footer {
 
     width: 100%;
-    margin: 0 10px;
+    gap: 0;
+    
         
     }
 }

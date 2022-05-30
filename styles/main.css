@@ -7,6 +7,7 @@
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 10px;
 }
 
 .header {
@@ -98,7 +99,7 @@
 
 @-webkit-keyframes move {
   0% {
-    left: 50px;
+    left: 30px;
     background: bisque;
   }
   50% {
@@ -106,14 +107,14 @@
     background: aquamarine;
   }
   100% {
-    left: 50px;
+    left: 30px;
     background: bisque;
   }
 }
 
 @keyframes move {
   0% {
-    left: 50px;
+    left: 30px;
     background: bisque;
   }
   50% {
@@ -121,7 +122,7 @@
     background: aquamarine;
   }
   100% {
-    left: 50px;
+    left: 30px;
     background: bisque;
   }
 }
@@ -204,7 +205,7 @@
   .animation,
   .footer {
     width: 100%;
-    margin: 0 10px;
+    gap: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
