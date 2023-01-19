@@ -16,7 +16,7 @@ a {
 
 .header {
     width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
@@ -142,9 +142,10 @@ a {
 }
 
 
-.content-block1, .content-block2 {
-    width: 45%;
+.content-block1, .content-block2, .content-block3 {
+    width: 32%;
     min-height: 790px;
+    box-sizing: border-box;
     border: 1px double #000;
     border-radius: 10px;
     padding: 20px;
@@ -156,7 +157,7 @@ a {
     }
 }
 
-.content-block1 {
+.content-block1, .content-block3 {
     background-color: rgb(124, 166, 214);
 }
 
